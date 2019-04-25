@@ -1,0 +1,72 @@
+.entry-data {
+  display: flex;
+  justify-content: space-between;
+  @extend %container;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-wrap: wrap;
+  input {
+    padding: 4px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #1D1F52;
+    outline-color: #1D1F52;
+    color: #333;
+  }
+  &__item {
+    width: calc(25% - 40px);
+  }
+  &__number {
+    display: flex;
+    flex-direction: column;
+    &-item {
+      margin-top: 20px;
+    }
+  }
+  &__overshoot {
+    display: flex;
+    flex-direction: column;
+    &-item {
+      margin-top: 20px;
+    }
+  }
+  &__time {
+    display: flex;
+    flex-direction: column;
+    &-item {
+      margin-top: 20px;
+    }
+  }
+  &__price {
+    display: flex;
+    flex-direction: column;
+    &-item {
+      margin-top: 20px;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-top: 25px;
+    background-color: #1D1F52;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.4s all;
+    &:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      opacity: 0.75;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
